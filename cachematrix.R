@@ -2,7 +2,7 @@
 
 ##1. The makeCacheMatrix function returns a list of functions to perform:  ##
 #    set/get the value of matrix
-#    set/set the value of inverse of matrix
+#    set/get the value of inverse of matrix
 makeCacheMatrix <- function(x = matrix()) {
    inv <- NULL
    set_ <- function(y) {
@@ -32,9 +32,9 @@ cacheSolve <- function(x, ...) {
 
 ##3. Example of usage: ##
 m <- matrix(1, nrow = 3, ncol = 3)
-m[1,1] = 10; 
-m[2,2] = 10;
-m[3,3] = 10;
+m[1,1] = 10
+m[2,2] = 10
+m[3,3] = 10
 cm <- makeCacheMatrix(m)
 cm$get()
 #      [,1] [,2] [,3]
